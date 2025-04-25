@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background-image: url(hunter-reilly-GttPkuDdWj0-unsplash.jpg);
+    background-size: cover;
+    color: white;
+    backdrop-filter: blur(5px) ;
+}
+h2 {
+    color: #232E21;
+}
+form {
+    width: 80%;
+    margin: 1rem 0 .5rem 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .7rem;
+    height: 60dvh;
+    width: clamp(250px, 50vw, 450px);
+    box-shadow: 12px 12px 10px 1px black;
+    background-color: rgba(95, 120, 160, 0.866);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+form
+select,
+button,
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.amount {
+    padding-top: 5px;
+}
+
+form input {
+    font-size: 1rem; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 3rem;
+    padding-left: 5px;
+    transition: 150ms;
+    border: 1px solid black;
+}
+form input:focus {
+    border: 1px solid gold;
+    scale: 110%;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+}
+i {
+    margin-top: 20px;
+    margin-right: 5px;
+    font-size: 1rem;
+}
+.select-container img {
+    max-width: 2.5rem;
+}
+.select-container img:hover {
+    transition: 150ms;
+    scale: 120%;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6rem;
+}
+
+select {
+    background: none;
+    color: black;
+    height: 1.7rem;
+    cursor: pointer;
+    transition: 150ms;
+}
+select:hover {
+    font-size: 1rem;
+}
+option {
+    font-size: .8rem;
+}
+
+.msg {
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3b356139;
+    text-align: center;
+    font-size: 1.2rem;
+    color:rgb(255, 228, 78);
+    transition: 250ms;
+}
+.msg:hover {
+    background-color: #3b3561;
+}
+
+form > button {
+    font-size: .85rem;
+    height: 2rem;
+    transition: 150ms;
+    cursor: pointer;
+}
+form > button:hover {
+    background-color: teal;
+    border-radius: 25px;
+    scale: 110%;
+    border: 1px solid #3B3561;
+}
+form > button:active {
+    background-color: rgb(51, 175, 175);
+    scale: 105%;
+}
+
+@media (max-width: 524px) {
+    h2 {
+        margin-left: 60px;
+    }
+}
